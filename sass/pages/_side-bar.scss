@@ -1,0 +1,32 @@
+.side-bar{
+    background-color: $white-color;
+    height: 80px;
+    font-size: 1.5em;
+
+
+    //  width: 40%;
+
+    &__side-list{ 
+        list-style:none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @include position($position:relative,$left:15%,$top:14%);
+    
+        .btn{
+            color: $secondary-color;
+           
+            &:hover{
+                
+                @include hover($secondary-color);
+                 }
+        
+        }
+      
+    }
+
+        
+}
+
+
+       

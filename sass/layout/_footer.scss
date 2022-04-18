@@ -1,0 +1,39 @@
+.footer-container{
+   background-color: $dark-grey;
+
+}
+.footer{
+   
+  
+   
+    @include position($position:relative,$left:15%);
+    &__text{
+        
+    
+        padding: 45px  0px 0px  0px ;
+        h4{
+           @include section($font-size:1.8em, $margin-bottom:15px,$color:$white-color);
+        }
+        p {
+            @include section($font-size:1.3em,$color:$grey-color,$margin-bottom:20px);
+         }
+         i{
+             font-size: 5em;
+         }
+        }
+        
+    &__row{
+  
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 65px;
+        width: 70%;
+    }
+
+    &__copyrights{
+         color:$grey-color;   
+        font-size: 1.5em;
+        
+        @include position($position:relative,$left:30%);
+    }
+}

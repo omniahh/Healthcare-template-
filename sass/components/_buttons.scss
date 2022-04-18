@@ -1,0 +1,27 @@
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    background: transparent;
+    font-size: 0.8em;
+    font-weight: 700;
+ 
+  &--rectangle{
+    padding: 10px;
+    color: $primary-color;
+    &:hover{
+        @include hover($primary-color);
+    }
+
+            }
+ &--rounded{
+    padding: 8px 17px;
+    color: $dark-color;
+    border: 2px solid $dark-color;
+    border-radius: 18px;
+    font-size: 1.3em;
+    &:hover{
+    
+        @include hover($dark-color);
+         }
+}
+}

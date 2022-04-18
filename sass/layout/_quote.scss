@@ -1,0 +1,27 @@
+.quote{
+    background-color: $primary-color;
+    height: 400px;
+
+
+    &__circle-quote{
+text-align: center;
+
+    }
+
+
+    &__text{
+        
+            width: 500px;
+            @include position($position:relative,$left:30%,$top:50%);
+            @include section($font-size:1.5em,$color:$lightgrey-color,$margin-bottom:20px);
+        
+         
+    }
+    &__author{
+      
+        @include position($position:relative,$left:48%,$top:50%);
+        @include section($font-size:1.5em,$color:$white-color,$margin-bottom:20px);
+        font-weight: 700;
+
+    }
+}

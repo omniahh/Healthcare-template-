@@ -1,0 +1,33 @@
+.department-container{
+    background-color: $lightgrey-color;
+    
+}
+
+.department{
+   
+    
+    @include position($position:relative,$left:15%);
+    &__text{
+        
+    
+        padding: 45px  0px 0px  0px ;
+        h2{
+           @include section($font-size:3em, $margin-bottom:15px);
+        }
+        p {
+            @include section($font-size:1.8em,$color:$grey-color,$margin-bottom:20px);
+         }
+    }
+    &__card-row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        margin-top: 55px;
+        width: 70%;
+    }
+    &__btn{
+  
+        @include position($position:relative,$left:30%,$bottom:50px);
+
+         }
+}

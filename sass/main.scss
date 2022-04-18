@@ -1,0 +1,22 @@
+////////abstract/////////
+@import "abstracts/variables";
+@import "abstracts/mixins";
+////base////////
+@import "base/reset";
+@import "base/typography";
+/////layout/////////
+@import "layout/navigation";
+@import "layout/landingpage";
+@import "layout/departments";
+@import "layout/doctors";
+@import "layout/resources";
+@import "layout/insurance";
+@import "layout/quote";
+@import "layout/footer";
+//page2 
+@import "pages/doctors_header";
+@import "pages/side-bar";
+////////components///////
+@import "components/buttons";
+@import "components/card";
+///////////////

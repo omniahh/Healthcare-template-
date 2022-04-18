@@ -1,0 +1,92 @@
+.card {
+  display: flex;
+
+  &__img {
+    margin-right: 39px;
+    font-size: 2em;
+  }
+
+  &__text {
+    h4 {
+      @include card-text(
+        $color: $secondary-color,
+        $margin-bottom: 10px,
+        $font-size: 2em
+      );
+    }
+    p {
+      @include card-text($color: $grey-color, $font-size: 1.8em);
+    }
+  }
+}
+
+.doctor-card {
+  border: 1px solid $lightgrey-color;
+  margin: 15px;
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &__img {
+    height: 280px;
+  }
+
+  &__text {
+    &:hover {
+      @include hover($secondary-color);
+    }
+    padding: 20px 0px 20px 20px;
+
+    p {
+      @include card-text(
+        $color: $grey-color,
+        $margin-bottom: 7px,
+        $font-size: 1.5em
+      );
+    }
+
+    h5 {
+      font-size: 2em;
+    }
+  }
+}
+
+.resource-card {
+  width: 325px;
+  &:hover {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  &__img {
+    width: 325px;
+  }
+
+  &__text {
+    padding: 30px 0px 50px 20px;
+
+    p {
+      @include card-text(
+        $color: $grey-color,
+        $margin-bottom: 7px,
+        $font-size: 1.5em
+      );
+    }
+
+    h5 {
+      font-size: 2em;
+    }
+  }
+}
+
+
+.insurance-card {
+   width: 180px;
+   height: 150px;
+   border: 1px solid $lightgrey-color;
+   &__img{
+       position: relative;
+       left: 22%;
+       top: 20%;
+   }
+}

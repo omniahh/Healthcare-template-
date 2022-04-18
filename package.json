@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "name": "sasstemplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node-sass sass/main.scss css/main.css  -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

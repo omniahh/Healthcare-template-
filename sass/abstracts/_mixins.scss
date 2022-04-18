@@ -1,0 +1,31 @@
+@mixin hover($background,$color:$white-color) {
+    background-color: $background;
+    color: $color;   
+}
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+  }
+
+  @mixin section( $font-size:null, $margin-bottom:null , $color:null)
+   {
+      font-size: $font-size;
+      margin-bottom: $margin-bottom;
+      color: $color;
+  } 
+  @mixin card-text($color:null,$margin-bottom:null, $font-size:null){
+
+            color: $color;
+            margin-bottom: $margin-bottom;
+            font-size: $font-size;
+       
+  }
+
+
+  @mixin section-margin ($margin-bottom:null){
+      margin-bottom:$margin-bottom;
+  }

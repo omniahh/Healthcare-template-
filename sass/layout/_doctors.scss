@@ -1,0 +1,28 @@
+.doctors-container{
+    @include section-margin($margin-bottom:70px);
+}
+.doctors{
+   
+    
+    @include position($position:relative,$left:15%);
+    &__text{
+        
+    
+        padding: 45px  0px 0px  0px ;
+        h2{
+           @include section($font-size:3em, $margin-bottom:15px);
+        }
+        p {
+            @include section($font-size:1.8em,$color:$grey-color,$margin-bottom:20px);
+         }
+    }
+    &__card-row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 65px;
+        width: 70%;
+  
+      
+    }
+  
+}
